@@ -1,0 +1,286 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #f7f8fb;
+  line-height: 1.6;
+}
+ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ 
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+ 
+.section-heading {
+  font-size: 28px;
+  margin-bottom: 28px;
+  border-left: 5px solid #6c5ce7;
+  padding-left: 12px;
+}
+ 
+/* ---------- Top bar / Nav ---------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+ 
+.brand-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6c5ce7;
+  letter-spacing: 0.5px;
+}
+ 
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+ 
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+ 
+.nav-link:hover,
+.topmenu:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #6c5ce7;
+}
+ 
+.home-link {
+  display: flex;
+  align-items: center;
+  color: #6c5ce7;
+}
+ 
+.home-link:hover {
+  color: #4b3fc0;
+}
+ 
+/* ---------- About Me ---------- */
+.about-section {
+  padding-top: 70px;
+}
+ 
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  flex-wrap: wrap;
+}
+ 
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6c5ce7;
+  flex-shrink: 0;
+}
+ 
+.profile-name {
+  margin: 0 0 4px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #6c5ce7;
+}
+ 
+.profile-title {
+  margin: 0 0 14px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #666;
+}
+ 
+.profile-summary {
+  margin: 0;
+  max-width: 560px;
+  color: #444;
+}
+ 
+/* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+ 
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+ 
+.project-card h3 {
+  margin-top: 0;
+  color: #222;
+}
+ 
+.project-stack {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c5ce7;
+  margin-bottom: 10px;
+}
+ 
+/* ---------- Skills ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+ 
+.skill-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+ 
+.skill-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+ 
+.skill-card h3 {
+  margin: 6px 0;
+}
+ 
+.skill-card p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+ 
+/* ---------- Recommendations ---------- */
+.recommendations-list {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 36px;
+}
+ 
+.recommendation {
+  background: #fff;
+  border-left: 4px solid #6c5ce7;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+.recommendation p {
+  margin: 0 0 10px;
+  font-style: italic;
+}
+ 
+.recommendation footer {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c5ce7;
+}
+ 
+.recommendation-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.recommendation-form h3 {
+  margin-top: 0;
+}
+ 
+.recommendation-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+ 
+.recommendation-form input,
+.recommendation-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+}
+ 
+.recommendation-form button {
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #6c5ce7;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+ 
+.recommendation-form button:hover {
+  background: #4b3fc0;
+}
+ 
+/* ---------- Popup ---------- */
+.popup {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: #e6f9ee;
+  border: 1px solid #34c77b;
+  color: #1e8a53;
+  border-radius: 8px;
+  font-weight: 600;
+  max-width: 480px;
+}
+ 
+.popup.hidden {
+  display: none;
+}
+ 
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  color: #888;
+  font-size: 13px;
+}
